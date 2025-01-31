@@ -18,6 +18,7 @@ Set admin credentials on first login
 
 ### ArgoCD
 URL: ArgoCD: http://localhost:8080
+
 Credentials: admin/admin
 
 ### K8S API
