@@ -1,0 +1,12 @@
+---
+- hosts: all
+  roles:
+    - capitanh.microk8s_ansible_role
+  tasks:
+  - name: Transfer argocd values file
+    template:
+      src: argocd-values.yml
+      dest: /tmp/argocd-values.yml
+
+  - name: Install argocd
+    command: microk8s enable argocd -f /tmp/argocd-values.yml

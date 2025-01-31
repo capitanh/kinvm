@@ -1,0 +1,10 @@
+admin_user: vagrant
+argocd_admin_password: admin
+microk8s_services:
+  - dns
+  - storage
+  - ingress
+  - host-access
+  - rbac
+  - portainer
+portainer_external_port: 9000   # Portainer Forwarded Port

@@ -1,0 +1,11 @@
+# Custom config values, see https://github.com/argoproj/argo-helm/blob/master/charts/argo-cd/values.yaml for reference
+configs:
+  params:
+    server.insecure: true
+  secret:
+    argocdServerAdminPassword: {{argocd_admin_password | password_hash(hashtype="bcrypt")}}
+
+server:
+  ingress:
+    enabled: true
+    ingressClassName: public

@@ -1,0 +1,5 @@
+---
+roles:
+- src: capitanh.microk8s_ansible_role
+collections:
+- name: kubernetes.core
