@@ -8,6 +8,7 @@ Vagrant.configure(2) do |config|
   config.vm.network "forwarded_port", host:8080,  guest:80       # ArgoCD
   config.vm.network "forwarded_port", host:8443,  guest:443      # ArgoCD
   config.vm.network "forwarded_port", host:16443, guest:16443    # k8s API
+  config.vm.network "forwarded_port", host:30003, guest:30003    # k8s API
 
   config.vm.provider "virtualbox" do |vb|
     vb.name = 'kinvm'
