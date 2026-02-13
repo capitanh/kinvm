@@ -5,6 +5,7 @@ Deploy kubernetes (microk8s) and ArgoCD in a vagrant managed VirtualBox VM
 * VirtualBox
 * Vagrant
 * Ansible
+* passlib (`sudo apt install python3-passlib`)
 
 ## Usage
 ```bash
