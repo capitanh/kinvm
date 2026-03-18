@@ -3,8 +3,7 @@ configs:
   params:
     server.insecure: true
   secret:
-    argocdServerAdminPassword: {{argocd_admin_password | password_hash(hashtype="bcrypt")}}
-
+    argocdServerAdminPassword: "{{ argocd_admin_password | password_hash(hashtype='bcrypt') }}"
 server:
   ingress:
     enabled: true
